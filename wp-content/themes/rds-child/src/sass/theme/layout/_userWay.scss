@@ -1,0 +1,17 @@
+/***User Way **/
+
+body .uwy .userway_buttons_wrapper {
+    @include media-breakpoint-down(lg) {
+       bottom: 80px !important;
+    }
+}
+
+body.nav-expanded   {
+    .elementor.elementor-41535 { z-index: 21474836538!important;}
+}
+body.modal-open {
+   .uwy {z-index: 99999;}
+}
+body.active-modal {
+    .uwy {z-index: 1;}
+}

@@ -1,0 +1,144 @@
+
+.schedule_service_form{
+    h1{
+        margin-bottom: 50px;
+           @media(max-width:991px){
+ margin-bottom: 42px;
+           }
+    }
+    .steps_background{
+            margin-bottom: 30px;
+             @media(max-width:991px){
+ margin-bottom: 0px;
+           }    
+            i{
+            color:$true_white!important;
+        }   
+    }
+    .steps_heading_color{
+        margin-bottom: 15px;
+        color: $true_black!important;
+        @media(max-width:380px){
+            max-width: 100%;
+    overflow-wrap: anywhere;
+        }
+    }
+    p.steps_description_color {
+    margin-bottom: 0px;
+    margin-right: 68px;
+}
+ul.gfield_checkbox{
+    max-width: 240px;
+    margin: 0 auto !important;
+
+    label{
+        line-height: 28.8px;
+        color:$true_black;
+    }
+}
+.gfield--type-checkbox{
+        padding-bottom: 24px !important;
+}
+}
+
+.schedule_service_accord {
+    .acc-outer {
+    display: grid !important;
+    grid-template-columns: 1fr 3fr;
+
+    @media(max-width:991px){
+            grid-template-columns: 1fr 6fr;
+    }
+}
+    .icon-plus:before{
+        content:"\f69f"!important
+    }
+    
+    .steps_description_color{
+        margin-bottom: 0px;
+    }
+   
+}
+.schedule_service_form .collapsed .icon-plus1:before {
+    content: "\f6a4"!important;
+    font-size: 20px;
+}
+.schedule_service_form .floating_labels_wrapper .floating_labels .date_service label {
+    left: 33px!important;
+}
+.schedule_service_form ul.gform_fields li .ginput_container.ginput_container_date .datepicker{
+    // padding: 10px 10px 8px !important;
+    // background-color: #f6f6f6;
+    // border-radius: 8px;
+}
+// .schedule_service_form ul.gform_fields li .ginput_container.ginput_container_date:before {
+//     content: "\eac5";
+// }
+
+.schedule_service_form .accordion-item {
+    border: none !important;
+}
+@media(max-width:767px){
+body .schedule_service_form .floating_labels_wrapper .floating_labels .gfield {
+    padding-bottom: 15px !important;
+    width: 100% !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.schedule_service_form .floating_labels_wrapper .floating_labels .date_service label {
+    left: 22px !important;
+}
+body .schedule_service_form ul.gform_fields li.preffered_time ul.gfield_radio li{
+    margin-bottom: 0px;
+    padding-bottom: 0px !important;
+}
+}
+
+@media(max-width:640px){
+.schedule_service_form .floating_labels_wrapper .floating_labels .date_service label {
+    left: 22px !important;
+}
+
+}
+.contact-form.schedule-form .floating_labels_wrapper .floating_labels .gfield.gfield--type-checkbox{
+        padding-bottom: 25px !important;
+}
+.free_estimate_accord:after, .schedule_service_accord:after{
+        content: "";
+    background: $tertiary_color;
+    height: 85%;
+    width: 1px;
+    position: absolute;
+    left: 38px;
+    z-index: -1;
+    top: 0px;
+    display: block!important;
+}
+
+ .schedule-form{
+margin-top:50px;
+ }
+
+.schedule_accordion {
+    margin: 0 auto;
+     gap:30px;
+}
+ .estimate_accordion {
+    margin: 0 auto;
+    gap:30px;
+    &:after{
+            background-color: $secondary_color;
+    }
+}
+
+.schedule_accordion .step:nth-child(3):before {
+    left: 445px;
+
+}
+.free_estimate_accord  .icon-plus:before {
+    content: "\f6a4" !important;
+}
+
+.free_estimate_accord:after {
+    left: 46px!important;
+}

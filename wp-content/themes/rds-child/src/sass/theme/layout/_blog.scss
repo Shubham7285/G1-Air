@@ -1,0 +1,68 @@
+@include media-breakpoint-down(xl) {
+.page_content  .mt-sn-100 {
+    margin-bottom: 0 !important;
+}
+}
+
+.blog_img_container {
+    img {
+        @include media-breakpoint-up(lg) {
+            object-fit: cover;
+            object-position: top;
+            min-height: 200px;
+        }
+    }
+}
+
+ 
+    .page_content{
+        .input-group{
+            background-color: $true_white;
+        }
+        span.input-group-text {
+    border-radius: 100px 0 0 100px !important;
+}
+       
+    .blog_img_container {
+        img{
+               height: 200px;
+               object-fit: cover;
+               object-position: center;
+                   border: 5px solid $primary_color;
+        }
+    }
+    .blog_read_more_text_color:hover {
+    color: $primary_color!important;
+}
+    }
+body .recent_post {
+    @media(max-width:991px){
+    max-width: 100vw !important;
+    width: 100vw !important;
+    margin-right: calc(50% - 50vw) !important;
+    margin-left: calc(50% - 50vw) !important;
+    padding: 0 15px;
+    margin-top: 20px;
+    padding-top: 50px !important;
+    }
+    .border-bottom-2 {
+        border-bottom: 2px solid $true_white;
+    }
+    .blog_img_container {
+        img{
+            height: 200px;
+               object-fit: cover;
+               object-position: center;
+        }
+    }
+}
+
+.sidbar-financing {
+        @media(max-width:991px){
+}
+}
+.single-post .sidebar {
+     @media(max-width:991px){
+    margin-top: 0px;
+}
+}

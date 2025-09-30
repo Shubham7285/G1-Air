@@ -1,0 +1,81 @@
+/* company service css start here */
+
+    body:not(.home) .company-service:before{
+        display: none!important;
+    }
+.company-service {
+    @media(max-width:991px){
+            overflow-x: hidden !important;
+    position: relative;
+    }
+    &:before{
+        content: "";
+    position: absolute;
+    background-image: url(../img/coupons/coupons-bg.png);
+    width: 100%;
+    height: 894px;
+    top: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media(max-width:991px){
+                   background-position: right 29%;
+                   height: 100%;
+    }
+    }
+    .row{
+        @media(max-width:991px){
+                flex-direction: column-reverse;
+        }
+    }
+    .img_section {
+        img{
+            border: 7px solid $primary_color;
+            @media(max-width:991px){
+                height: 215px;
+            }
+        }
+       @media(max-width:991px){
+                margin-bottom: 30px;
+        } 
+    }
+    h4{
+        margin-bottom: 15px;
+    }
+     h5{
+        margin-bottom: 30px;
+     }
+    p{
+        margin-bottom: 30px;
+         @media(max-width:991px){
+        text-align: center;
+    }
+    }
+    .left-img{
+        @media(min-width:991px){
+        padding-right: 15px;
+        }
+    }
+    .right-content{
+        @media(min-width:991px){
+        padding-left: 15px;
+    }
+    .cmpny-content{
+        max-width: 540px;
+         @media(max-width:991px){
+        max-width: 100%;
+    }
+    ul{
+        @media(max-width:991px){
+            max-width: 420px;
+    margin: 0 auto;
+        }
+        li{
+            margin-bottom: 15px!important;
+        }
+    }
+    }
+}  
+}
+/* company service css end here */

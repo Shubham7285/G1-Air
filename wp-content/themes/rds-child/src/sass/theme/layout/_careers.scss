@@ -1,0 +1,73 @@
+.elementor-40784 {
+    background-color: $true_white;
+    .e-con {
+        padding: 0;
+    }
+}
+.carrer_banner_content{
+
+    &:before {
+
+        @include media-breakpoint-up(lg) {
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        min-height: 375px;
+        max-height: 375px;
+        }
+        @include media-breakpoint-up(xl) {
+            min-height: 475px;
+            max-height: 475px;
+        }
+        @media screen and (min-width: 1800px) {
+            min-height: 577px;
+            max-height: 577px;
+        }
+
+    }
+
+    &>div {
+        position: relative;
+        z-index: 2;
+            padding-left: 104px;
+            @media(max-width:991px){
+                margin-top: 40px!important;
+                padding-left: 20px;
+            }
+    }
+}
+
+.careers-banner-img {
+    
+    @include media-breakpoint-up(lg) {
+        min-height: 302px !important;
+        max-height: 302px;
+    }
+    @include media-breakpoint-up(xl) {
+        min-height: 402px !important;
+        max-height: 402px;
+    }
+    @media screen and (min-width: 1800px) {
+        min-height: 502px !important;
+        max-height: 502px;
+    }
+}
+.carrer_icon_swiper {
+.swiper-wrapper {
+    row-gap: 29px;
+}
+}
+
+
+.career_faq .accordion-body{
+  border-top: 1px solid $true_black;  
+  p{
+    margin-bottom: 0px!important;
+  }
+}
+
+.carrer_banner_content button.btn.btn-primary {
+    padding-inline: 5px !important;
+    max-width: 270px;
+    min-width: 270px;
+}

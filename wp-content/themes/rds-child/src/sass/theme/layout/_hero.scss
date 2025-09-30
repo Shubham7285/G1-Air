@@ -1,0 +1,40 @@
+/* banner css start here */
+.home_banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        .banner-content {
+    max-width: 430px;
+    @media(max-width:991px){
+        max-width: 100%;
+    }
+    .display1{
+        padding-bottom: 12px;
+               color:$true_white!important;
+    }
+    .display2{
+        padding-bottom: 12px;
+        color:$true_white!important;
+    }
+    a{
+        margin-top:30px;
+            padding-inline: 10px !important;
+        @media(max-width:991px){
+           margin-top:31px; 
+        }
+    }
+
+}
+
+
+}
+.hero_banner_form_background {
+    padding:30px 35px;
+    border-radius: 20px;
+    background-color: $secondary_color;
+    h3{
+        margin-bottom: 25px;;
+    }
+}
+
+/* banner css end here */

@@ -1,0 +1,80 @@
+
+/* residentail css start here */
+.expert{
+    .sec-content-inner {
+        z-index: 999;
+        position: relative;
+    h1{
+        margin-bottom: 15px;
+    }
+    h2{
+        margin-bottom: 30px;
+        @media(max-width:991px){
+            margin-bottom: 15px;
+        }
+    }
+    .read-more-btn{
+    margin-bottom: 0px!important;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22.5px;
+    display: none!important;
+    &:hover {
+    span{
+        text-decoration: underline;
+    }
+}
+    }
+}
+}
+.about-expert {
+    padding-bottom: 5px;
+    @media(max-width:991px){
+       padding-top: 40px; 
+    }
+    .about-left-img 
+ {
+    padding-right: 10px;
+    padding-left: 20px;
+    @media(max-width:991px){
+       padding-right: 20px; 
+       margin-top: 20px;
+    }
+    img{
+        width: auto!important;
+    }
+ }
+}
+.about-content{
+    .about-left-img 
+ {
+    padding-left: 10px;
+    @media(max-width:991px){
+       padding-left: 20px; 
+       margin-top: 20px;
+    }
+ }
+}
+.about-content-start{
+     @media(max-width:991px){
+      padding-bottom: 40px;
+    }
+    .row {
+.discover-content{
+    h2{
+        margin-bottom: 30px;
+    }
+}
+}
+}
+
+
+.financing-read-more{
+    .expert{
+        padding-block:80px;
+        @media(max-width:991px){
+            padding-block:40px; 
+        }
+    }
+}
+/* residentail css end here */
