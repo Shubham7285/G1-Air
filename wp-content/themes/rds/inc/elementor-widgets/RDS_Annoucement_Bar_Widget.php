@@ -183,6 +183,7 @@ public $widgetPathFull;
         //Middle Section control Start
         $this->start_controls_section("rds_global_announcement_middle", [
             "label" => esc_html__("Middle Section", "rds-global-announcement-bar-widget"),
+            "condition" => ["variation!" => "b"],
         ]);
         $this->add_control("middle_icon_class", [
             "label" => "Icon",
@@ -210,7 +211,7 @@ public $widgetPathFull;
         //Descktop schedule online  Section control start
         $this->start_controls_section("desktop_schedule_online_button", [
             "label" => esc_html__("Middle Section", "rds-global-announcement-bar-widget"),
-            "condition" => ["variation" => "b"],
+            "condition" => ["variation!" => "a"],
         ]);
         $this->add_control("desktop_schedule_online_enable", [
             "name" => "desktop_schedule_online_enable",

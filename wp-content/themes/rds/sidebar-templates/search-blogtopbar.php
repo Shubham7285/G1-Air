@@ -15,32 +15,17 @@ function getCurrentUrl() {
     return $protocol . $host . $uri;
 }
 ?>
-<?php if (is_post_type_archive('case-studies')) { ?>
-    <form role="search" method="get" id="searchform" action="<?php echo esc_url(home_url('/case-studies')); ?>">
-<?php } else { ?>
-    <form role="search" method="get" id="searchform" action="<?php echo esc_url(get_home_url()); ?>">
-<?php } ?>
-
-	<div class="row content_pb_30">
-        <div class="col-lg-4 col-md-4 col-12 content_mb_30 content_mb_md_0">
+<form role="search" method="get" id="searchform" action="<?php echo esc_url(getCurrentUrl()); ?>">
+    <div class="row">
+        <div class="col-lg-4 my-3 col-md-4 col-12 pe-lg-3">
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <button id="searchsubmit" aria-label="Center Align" type="submit" class="input-group-text color_primary_bg color_primary_hover_bg border-0 rounded-0 h-54 text-center w-54  cursor-pointer"><i class="icon-magnifying-glass1 true_white text_18 line_height_18 mx-auto"></i></button>
+                    <button id="searchsubmit" aria-label="Center Align" type="submit" class="input-group-text color_tertiary_bg color_tertiary_hover_bg border-0 rounded-0 h-54 text-center w-54  cursor-pointer"><i class="icon-magnifying-glass2 true_black bc_text_18 bc_line_height_18 mx-auto"></i></button>
                 </div>
-                <input type="text" id="search" value="<?php echo get_search_query(); ?>" name="s" class="form-control rounded-0 border-0  text_14 line_height_18 h-54" placeholder="SEARCH">
-				<?php if(is_post_type_archive('case-studies') ){ ?>
-				<input type="hidden" name="post_type" value="case-studies">
-				<?php } ?>
-
+                <input type="text" id="search" value="<?php echo get_search_query(); ?>" name="s" class="form-control rounded-0 border-0 color_quaternary_bg font_alt_1 text_semibold text_13 line_height_18 h-54" placeholder="SEARCH">
             </div>
         </div>
         <?php
-	if (!is_post_type_archive('case-studies')) {
-    $current_url = $_SERVER['REQUEST_URI'];
-
-    if (strpos($current_url, 'case-studies') === false) {
-
-
         $categories = get_categories();
         $has_only_uncategorized = false;
         if (count($categories) == 1) {
@@ -52,10 +37,10 @@ function getCurrentUrl() {
             }
         }
 	if (count($categories) > 0 && !$has_only_uncategorized) { ?>
-        <div class="col-lg-4 col-md-4 col-12">
+        <div class="col-lg-4 my-3 col-md-4 col-12 ps-lg-2 pe-lg-3">
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <span class="input-group-text color_primary_bg color_primary_hover_bg border-0 rounded-0 h-54 text-center w-54  cursor-pointer"><i class="icon-bars2 true_white text_18 line_height_18 mx-auto"></i></span>
+                    <span class="input-group-text color_tertiary_bg color_tertiary_hover_bg border-0 rounded-0 h-54 text-center w-54  cursor-pointer"><i class="icon-bars2 true_black  bc_text_18 bc_line_height_18 mx-auto"></i></span>
                 </div>
                 <div class="custom-select">
                     <select name="cat" id="inputGroupSelect01" class="form-control rounded-0" onchange="document.location.href = this.options[this.selectedIndex].value;">
@@ -80,7 +65,8 @@ function getCurrentUrl() {
                 </div>
             </div>
         </div>
-	<?php } } }?>
+    <?php }
+        ?>
 
     </div>
 </form>

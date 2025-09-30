@@ -23,9 +23,9 @@ if (function_exists("get_promotion_query")) {
     <div class="<?php echo $get_rds_template_data_array["page_templates"][
     	"promotions"
     ]["subpage_sidebar"] == true
-    	? "col-lg-6 mb-lg-5 mb-4 pb-lg-3 "
+    	? "col-lg-6 mb-lg-5 mb-4 pb-lg-3"
     	: "col-lg-4 mb-lg-5 mb-4"; ?> ">
-        <div class="h-coupan-100 color_primary_bg p-lg-3 p-3 SSS" style="background-color: <?php echo $colorCode; ?>;">
+        <div class="h-coupan-100 color_primary_bg p-lg-3 p-3" style="background-color: <?php echo $colorCode; ?>;">
             <div class="coupon_name  border-dashed-3 border-lg-dashed-5 h-coupan-100 py-4 p-4 px-lg-0 text-center">
                 <span class="d-block text-center px-lg-0 px-3 pt-lg-0 pt-2  coupon_subtitle  coupon_heading"><?php echo $heading; ?></span>
                 <span class="d-block text-center py-2 px-lg-0 px-2 pt-lg-0 pt-2 my-lg-1 coupon_sub_heading"><?php echo $subheading; ?></span>
